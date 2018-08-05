@@ -1,0 +1,13 @@
+{
+  "name": "cartref",
+  "version": "1.0.0",
+  "description": "Polygon 8 Contact Form",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polygon8/cartref.git"
+  }
+}

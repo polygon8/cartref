@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>POLYGON 8</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var RecaptchaOptions = { data-size: 'compact' };
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Megrim:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id="contact">
+      <div class="section-content">
+        <h1 class="section-header content-header">
+          <img id="logo" src="images/polygon_8_small.png" alt="Polygon 8 logo" height="40" width="66">
+          POLYGON 8
+        </h1>
+      </div>
+      <div class="contact-section">
+      <div class="container">
+        <div class="col-md-6">
+          <h2>Coming soon</h2>
+          <p>A publishing company with a difference! We'll be in touch</p>
+        </div>
+        <form id="serverless-form" action="#">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" autocomplete="email" id="email" name="email" placeholder=" Enter email address" required>
+            </div>
+            <button type="submit" id="submit" class="btn btn-default submit">
+              <i id="loader" class="fa fa-paper-plane" aria-hidden="true"></i>
+              Send
+            </button>
+            <div class="g-recaptcha" data-sitekey="6Lf0amgUAAAAAOB1DKJeVV1PSUIYxckb5kCNjsWe"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+        var URL = "https://1ehwvce7gl.execute-api.eu-west-1.amazonaws.com/development/sendMail ";
+    </script>
+    <script src="js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
+</html>
