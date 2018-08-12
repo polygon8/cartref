@@ -29,12 +29,12 @@ provider:
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
 
 functions:
-  sendMail:
-    handler: handler.sendMail
+  send_mail:
+    handler: handler.send_mail
     description: Send Email using AWS SES Service
     events:
       - http:
-          path: sendMail
+          path: send_mail
           method: post
           integration: lambda
           cors: true
